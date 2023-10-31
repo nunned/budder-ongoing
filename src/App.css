@@ -1,0 +1,95 @@
+.app-wrap {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  height: 100vh; /* Ensures the container takes the full viewport height */
+  overflow: hidden; /* Prevents any additional scrolling */
+}
+
+.chat-page,
+.dash-page {
+  display: flex;
+  flex-direction: column;
+  height: calc(100vh - 60px); /* Reducing the height by the navbar's height */
+  overflow-y: auto; /* Allows scrolling within the chat and dash pages if the content exceeds their heights */
+  margin-top: 1rem;
+}
+
+.dash-page {
+  display: flex;
+  flex-direction: column;
+  height: calc(100vh - 60px); /* Reducing the height by the navbar's height */
+  overflow-y: auto; /* Allows scrolling within the chat and dash pages if the content exceeds their heights */
+  margin-top: 1rem;
+  width: 50%
+}
+
+.message-box {
+  flex: 1; /* Takes up all available space */
+  overflow-y: auto; /* Allows scrolling for chat history */
+  padding: 1rem; /* Provides some spacing for the chat messages */
+  background-color: #35354c;
+  border-radius: 5px;
+}
+
+.input-box {
+  display: flex;
+  justify-content: space-between;
+  padding: 1rem; /* Provides some spacing around the input */
+}
+
+.input-box input {
+  flex: 1; /* Allows the input field to take up the majority of the space */
+  margin-right: 0.5rem; /* Provides some spacing between the input field and the button */
+}
+
+.facility-header {
+  display: flex;
+  flex-direction: row;
+  gap: 15px;
+}
+
+/* DashCard */
+/* App.css */
+.dash-card {
+  background-color: #2C3E50;
+  border-radius: 8px;
+  padding: 16px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.dash-card-content {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+}
+
+.dash-card-text {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+.dash-card-label {
+  color: #BDC3C7;
+  margin-bottom: 8px;
+}
+
+.dash-card-value {
+  color: #ECF0F1;
+  font-size: 24px;
+  margin-bottom: 8px;
+}
+
+.dash-card-descriptor {
+  color: #BDC3C7;
+}
+
+.dash-card-icon {
+  width: 24px;
+  height: 24px;
+}
+

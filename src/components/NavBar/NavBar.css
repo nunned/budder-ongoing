@@ -1,0 +1,155 @@
+.navbar-outer-wrap {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 5px;
+}
+
+.nav-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: stretch;
+  gap: 15px;
+}
+
+.dash-chat-wrap {
+  display: flex;
+  background-color: #1f1f29; /* Dark background color */
+  padding: 6px 6px;
+  border-radius: 7px;
+  gap: 5px;
+  justify-content: space-between;
+  min-width: max-content; 
+}
+
+.nav-link {
+  display: flex;
+  align-items: center;
+  text-decoration: none; /* Removes the default link underline */
+  color: white; /* Text color */
+  padding: 8px 16px;
+  border-radius: 4px;
+  transition: background-color 0.3s ease;
+}
+
+.nav-link:hover {
+  background-color: #555773;
+}
+
+.nav-icon {
+  margin-right: 8px;
+  height: 20px;
+}
+
+.active-link {
+  background-color: #2d2d49;
+}
+
+.nav-link .nav-icon {
+  color: #bdbdbd;
+}
+
+.active-dash .nav-icon {
+  color: #4a59ff;
+}
+
+.active-chat .nav-icon {
+  color: #ffce4a;
+}
+
+/* UserSettingsButton */
+button {
+  background-color: #1f1f29;
+  border: none;
+  padding-left: 12px;
+  padding-right: 12px;
+  border-radius: 7px;
+  gap: 3px;
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+  height: 100%;
+}
+
+button img {
+  height: 20px;
+}
+
+/* modal for usersettingsbutton */
+
+.modal {
+  position: fixed; /* Use fixed positioning */
+  top: 50%; /* Position at 50% from the top */
+  left: 50%; /* Position at 50% from the left */
+  transform: translate(-50%, -50%); /* Center the modal */
+  width: 200px;
+  background-color: rgb(88, 88, 97);
+  border: #ffffff;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  z-index: 10; /* Ensure modal appears on top of other content */
+}
+
+.modal ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+.modal li {
+  padding: 8px 16px;
+  cursor: pointer;
+  border-bottom: 1px solid #f0f0f0;
+  color: #1f1f29;
+}
+
+.modal li:hover {
+  background-color: #f0f0f0;
+}
+
+.modal li:last-child {
+  border-bottom: none;
+}
+
+/* FacilityPick */
+
+.facility-container {
+  display: flex;
+  width: 100%;
+  justify-content: center;
+  position: relative;
+}
+
+.facility-button {
+  width: 100%;
+  text-align: center;
+  justify-content: space-between;
+  background-color: #35354c;
+  color: white;
+  border: none;
+  padding: 8px 12px;
+  cursor: pointer;
+}
+
+.facility-dropdown {
+  position: absolute;
+  top: 100%;
+  width: 100%;
+  border: 1px solid #555773;
+  background-color: #1f1f29;
+  border-radius: 4px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  z-index: 100;
+}
+
+.facility-item {
+  display: flex;
+  padding: 10px 12px;
+  cursor: pointer;
+  transition: background-color 0.2s ease;
+}
+
+.facility-item:hover {
+  background-color: #555773;
+}
+

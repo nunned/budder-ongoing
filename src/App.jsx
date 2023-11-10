@@ -2,6 +2,7 @@ import { useState } from "react";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 import ChatPage from "./pages/ChatPage";
 import DashPage from "./pages/DashPage";
+import StrainPage from "./pages/StrainPage";
 import NavBar from "./components/NavBar/NavBar";
 import "./App.css";
 
@@ -22,6 +23,7 @@ function App() {
             path="/dashboard"
             element={<DashPage facility={selectedFacility} />}
           />
+          <Route path="/strains" element={<StrainPage />} />
         </Routes>
       </BrowserRouter>
     </div>

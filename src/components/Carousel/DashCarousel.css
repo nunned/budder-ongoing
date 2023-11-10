@@ -1,0 +1,77 @@
+/* DashCarousel.css */
+
+.history-carousel {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 10px;
+  margin: 20px;
+}
+
+.carousel-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  margin-bottom: 10px;
+}
+
+.see-all-button {
+  background-color: transparent;
+  border: none;
+  color: #0094FF; /* Adjust the color to match the SEE ALL button */
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.carousel-cards {
+  display: flex;
+  gap: 10px;
+}
+
+.dash-item {
+  display: flex;
+  flex-direction: column;
+  background-color: #2d2d49; /* Adjust the background color to match the card */
+  border-radius: 8px;
+  padding: 10px;
+  width: 150px; /* Adjust the width as necessary */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Simple shadow for depth */
+}
+
+.dash-item-action {
+  font-size: 1rem;
+  color: white;
+  margin-bottom: 5px;
+}
+
+.dash-item-user,
+.dash-item-time {
+  font-size: 0.8rem;
+  color: #bdbdbd; /* Lighter text for user and time */
+  margin-bottom: 3px;
+}
+
+.carousel-navigation {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  padding-top: 10px;
+}
+
+.carousel-navigation button {
+  background-color: #1f1f29; /* Dark background color for buttons */
+  border: none;
+  color: white;
+  padding: 5px 10px;
+  cursor: pointer;
+  border-radius: 4px;
+}
+
+.carousel-navigation button:hover {
+  background-color: #555773; /* Hover effect for buttons */
+}
+
+/* Add custom icons or styles for the left and right arrows if needed */
+
+/* Additional responsive styling can be added to make the carousel mobile-friendly */

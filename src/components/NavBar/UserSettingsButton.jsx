@@ -1,6 +1,7 @@
-import { useState } from 'react';
-import userIcon from '../../assets/user.svg'; 
-import downArrow from '../../assets/arrowdown.svg';
+import { useState } from "react";
+import { NavLink } from "react-router-dom";
+import userIcon from "../../assets/user.svg";
+import downArrow from "../../assets/arrowdown.svg";
 
 const UserSettingsButton = () => {
   const [showModal, setShowModal] = useState(false);
@@ -15,7 +16,10 @@ const UserSettingsButton = () => {
       {showModal && (
         <div className="modal">
           <ul>
-            <li>Placeholder 1</li>
+            <li>
+              <NavLink to="/strains">Strain Page</NavLink>{" "}
+              {/* Change this line */}
+            </li>
             <li>Placeholder 2</li>
             <li>Placeholder 3</li>
           </ul>
@@ -23,6 +27,6 @@ const UserSettingsButton = () => {
       )}
     </div>
   );
-}
+};
 
 export default UserSettingsButton;

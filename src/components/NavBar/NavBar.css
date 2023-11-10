@@ -84,8 +84,8 @@ button img {
   left: 50%; /* Position at 50% from the left */
   transform: translate(-50%, -50%); /* Center the modal */
   width: 200px;
-  background-color: rgb(88, 88, 97);
-  border: #ffffff;
+  background-color: rgb(190, 190, 190);
+  border: #201e1e;
   border-radius: 8px;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
   z-index: 10; /* Ensure modal appears on top of other content */
@@ -99,7 +99,7 @@ button img {
 .modal li {
   padding: 8px 16px;
   cursor: pointer;
-  border-bottom: 1px solid #f0f0f0;
+  border-bottom: 1px solid #201e1e;
   color: #1f1f29;
 }
 

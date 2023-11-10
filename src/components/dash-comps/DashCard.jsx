@@ -1,6 +1,6 @@
 // DashCard.js
-import PropTypes from 'prop-types';
-import '../../App.css';
+import PropTypes from "prop-types";
+import "../../App.css";
 
 function DashCard({ label, value, descriptor, icon }) {
   return (
@@ -8,8 +8,10 @@ function DashCard({ label, value, descriptor, icon }) {
       <div className="dash-card-content">
         <div className="dash-card-text">
           <p className="dash-card-label">{label}</p>
-          <h2 className="dash-card-value">{value}</h2>
-          <p className="dash-card-descriptor">{descriptor}</p>
+          <div className="hor-group">
+            <h2 className="dash-card-value">{value}</h2>
+            <p className="dash-card-descriptor">{descriptor}</p>
+          </div>
         </div>
         <img src={icon} alt="arrow icon" className="dash-card-icon" />
       </div>

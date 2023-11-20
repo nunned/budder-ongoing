@@ -18,12 +18,14 @@ const DashCarousel = ({ headerTitle, dashItems }) => {
   return (
     <div className="history-carousel">
       <div className="carousel-header">
-        <h2>{headerTitle}</h2> {/* Dynamic title */}
+        <h2>{headerTitle}</h2>
         <button className="see-all-button">SEE ALL</button>
       </div>
       <div className="carousel-cards">
-        {/* Display cards based on currentIndex */}
+        {/* Conditionally render the previous, current, and next cards */}
+        {currentIndex > 0 && dashItems[currentIndex - 1]}
         {dashItems[currentIndex]}
+        {currentIndex < dashItems.length - 1 && dashItems[currentIndex + 1]}
       </div>
       <div className="carousel-navigation">
         <button onClick={goPrev}>&lt;</button>

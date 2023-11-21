@@ -1,0 +1,52 @@
+/* customDropdown.css */
+.custom-dropdown {
+  position: relative;
+  width: 100%;
+}
+
+.dropdown-header {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  padding: 10px 20px;
+  width: 100%;
+  border-radius: 8px;
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  background: #353547;
+  color: azure;
+  cursor: pointer;
+  color: rgba(255, 255, 255, 0.5);
+}
+
+.drop-header {
+  text-align: left;
+  margin-bottom: 5px;
+}
+
+.selected-text {
+  font-size: 15px;
+  color: rgba(255, 255, 255, 0.5);
+}
+
+.dropdown-options {
+  position: absolute;
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  top: 100%;
+  left: 0;
+  right: 0;
+  z-index: 10;
+  border-radius: 8px;
+  overflow: hidden;
+}
+
+.dropdown-option {
+  padding: 10px 20px;
+  background: #292937;
+  color: aliceblue;
+  cursor: pointer;
+  border-top: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.dropdown-option:hover {
+  background: #353547;
+}

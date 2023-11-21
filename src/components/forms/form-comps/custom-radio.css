@@ -1,0 +1,50 @@
+.toggle-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    padding: 10px 20px;
+    border-radius: 8px;
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    background: #353547;
+    color: azure;
+  }
+  
+  .custom-radio {
+    position: relative;
+    padding-left: 30px;
+    cursor: pointer;
+    display: inline-block;
+    line-height: 20px;
+    margin-right: 15px;
+    color: azure;
+  }
+  
+  .custom-radio input {
+    position: absolute;
+    opacity: 0;
+    cursor: pointer;
+  }
+  
+  .custom-radio input:checked ~ label {
+    color: #9d9dff;
+  }
+  
+  .custom-radio label:before {
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 20px;
+    height: 20px;
+    border: 1px solid rgba(255, 255, 255, 0.5);
+    border-radius: 50%;
+    background-color: #353547;
+    transition: background-color 0.3s ease;
+  }
+  
+  .custom-radio input:checked ~ label:before {
+    background-color: #4b4b70;
+  }
+  

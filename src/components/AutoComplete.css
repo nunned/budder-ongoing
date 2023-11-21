@@ -1,0 +1,73 @@
+/* Autocomplete.css */
+
+.container {
+  max-width: 960px;
+  margin-top: 40px;
+}
+
+.autocomplete {
+  display: flex;
+  flex-direction: column;
+  width: auto;
+  border-radius: 10px;
+  width: 100%;
+}
+
+.autocomplete-input {
+  padding: 10px 78px 10px 20px;
+  border-radius: 8px;
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  background: #353547;
+  color: azure;
+  text-align: left;
+  width: 100%;
+  /* this min-width will fuck with the whole container */
+  /* it is added to show full width of tag number */
+  min-width: 280px;
+  margin-bottom: 5px;
+  box-sizing: border-box;
+}
+
+input:focus {
+  outline: none;
+}
+
+.suggestions {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-self: center;
+  list-style: none;
+  border-top: 1px solid #d4d4d4;
+  border-radius: 0 0 10px 10px;
+  background: #353547;
+}
+
+.suggestions li {
+  display: flex;
+  justify-content: center;
+  list-style: none;
+  padding: 10px;
+  color: rgb(195, 198, 201);
+  cursor: pointer;
+}
+
+.autocomplete li:hover {
+  background-color: #d4d4d4;
+}
+
+.input-container {
+  position: relative;
+  display: inline-block;
+}
+
+.input-svg {
+  position: absolute;
+  object-fit: cover;
+  height: 10px; /* Adjust as needed */
+  width: 10px;  /* Adjust as needed */
+  right: 10px;  /* Adjust distance from the right of the container */
+  top: 45%;
+  transform: translateY(-50%);
+}
+

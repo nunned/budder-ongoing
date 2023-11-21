@@ -1,0 +1,51 @@
+/* form_header.css */
+.wrap {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+  margin-bottom: 2rem;
+  width: 100%;
+}
+
+.budder {
+  color: #8e8d94;
+  font-size: 9.872px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
+  letter-spacing: 0.494px;
+}
+
+.form-top {
+  display: flex;
+  justify-content: space-between;
+  flex-direction: row;
+  gap: 5px;
+  align-items: center;
+  width: 100%;
+}
+
+.form-bot {
+  text-align: left;
+  font-weight: 600;
+}
+
+.top-top {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 5px;
+}
+
+.form-logo {
+  object-fit: cover;
+  height: 1rem;
+  width: 1rem;
+}
+
+.form-subheader {
+  text-align: left;
+  font-size: 0.9rem;
+  font-weight: 400;
+  color: #979696; /* Adjust color as needed */
+}

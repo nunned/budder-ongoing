@@ -1,0 +1,247 @@
+/* template_form.css */
+* {
+  text-align: center;
+  box-sizing: border-box;
+}
+
+.form-wrap {
+  display: flex;
+  justify-content: center;
+  margin-top: 2rem;
+}
+
+.form-container {
+  background: #292937;
+  border-radius: 10px;
+  display: flex;
+  width: auto;
+  padding: 20px;
+  flex-direction: column;
+  align-items: flex-start;
+  color: aliceblue;
+}
+
+.form-content {
+  margin-top: -1rem;
+}
+
+.itm-header {
+  display: flex;
+  align-items: flex-start;
+}
+
+.itm-list {
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+  flex-direction: column;
+  gap: 5px;
+}
+
+.itm-container {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+  align-items: flex-start;
+}
+
+.itm-container.custom-header {
+  margin-bottom: 1rem;
+  font-weight: 400;
+  background-color: #999cc4;
+  padding: 10px 20px;
+  border-radius: 4px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: default;
+}
+
+.itm-container.custom-header p {
+  margin: 0;
+}
+
+.itm-container input[type="text"] {
+  display: flex;
+  padding: 10px 78px 10px 20px;
+  justify-content: center;
+  align-items: center;
+  border-radius: 8px;
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  background: #353547;
+  color: azure;
+  text-align: left;
+}
+
+.itm-container input[type="text"]::placeholder {
+  font-size: 15px;
+  color: rgba(255, 255, 255, 0.5);
+}
+
+.submit-button {
+  background-color: #4b4b70;
+  color: aliceblue;
+  border: none;
+  border-radius: 5px;
+  padding: 10px 20px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  margin-top: 0.5rem;
+}
+
+.submit-button:hover {
+  background-color: #353547;
+}
+
+.overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background-color: rgba(0, 0, 0, 0.7);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  z-index: 3;
+}
+
+.overlay textarea {
+  width: 60%;
+  max-width: 400px;
+  padding: 10px 20px;
+  border-radius: 8px;
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  background: #353547;
+  color: azure;
+  font-size: 15px;
+  resize: none; /* prevents the textarea from being resized */
+}
+
+.overlay button {
+  background-color: #4b4b70;
+  color: aliceblue;
+  border: none;
+  border-radius: 5px;
+  padding: 10px 20px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  margin-top: 20px;
+}
+
+.overlay button:hover {
+  background-color: #353547;
+}
+
+.weight-comp {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  width: auto;
+}
+
+.weight-input {
+  width: 50%;
+  padding: 0.7rem;
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  border-radius: 8px;
+  background: #353547;
+  font-size: 15px;
+  color: rgba(255, 255, 255, 0.5);
+  text-align: left;
+  box-sizing: border-box;
+}
+
+.dropdown-container {
+  width: 50%;
+  box-sizing: border-box;
+}
+
+.itm-container .number-input {
+  display: flex;
+  padding: 10px 20px;
+  border-radius: 8px;
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  background: #353547;
+  color: azure;
+  text-align: left;
+  width: 100%;
+}
+
+.itm-container .number-input::placeholder {
+  font-size: 15px;
+  color: rgba(255, 255, 255, 0.5);
+}
+
+.plant-list {
+  background-color: rgba(90, 157, 161, 0.3);
+  display: flex;
+  flex-direction: column;
+  align-self: center;
+  padding: 5px 15px;
+  border-radius: 15px;
+  margin-top: 0.5rem;
+  max-height: calc(10 * 44px);
+  overflow-y: auto;
+}
+
+.itm-container input[type="text"],
+.autocomplete-input {
+  width: 100%;
+  box-sizing: border-box;
+}
+
+.itm-container,
+.autocomplete {
+  max-width: 500px;
+  width: 100%;
+}
+
+.plant-waste-component {
+  background-color: #858bcc; /* Replace with your desired color */
+  border-radius: 8px;
+  padding: 10px;
+  margin-bottom: 10px;
+}
+
+.itm-container.plant-waste-header {
+  margin-bottom: 10px; /* Adjust the value as needed */
+}
+
+.template-section {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}
+
+.prefill-textarea {
+  display: flex;
+  padding: 10px 78px 10px 20px;
+  justify-content: flex-start;
+  align-items: center;
+  border-radius: 8px;
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  background: #353547;
+  color: azure;
+  text-align: left;
+  width: 100%;
+}
+
+.newloc-subheading {
+  font-size: 12px;
+  margin-top: -6px;
+  font-weight: 100;
+  letter-spacing: 0.5px;
+}
+
+.template {
+  background-color: rgba(24, 255, 178, 0.4);
+  margin: 10px 20px;
+  padding: 10px 20px;
+  border-radius: 5px;
+}
+
+.plant-list > .strain-comp {
+  margin-bottom: 20px; /* Adjust the value as needed */
+}

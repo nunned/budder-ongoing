@@ -1,0 +1,21 @@
+.horizontal-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center; /* Align items vertically */
+  width: 100%; /* Adjust the width as needed */
+}
+
+.input-group {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
+
+.input-group input {
+  width: 100%; /* Make input take the full width of its container */
+}
+
+.custom-strain-header {
+  text-align: left;
+}

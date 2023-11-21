@@ -5,6 +5,7 @@ import DashPage from "./pages/DashPage";
 import StrainPage from "./pages/StrainPage";
 import NavBar from "./components/NavBar/NavBar";
 import "./App.css";
+import AdminPage from "./pages/AdminPage";
 
 function App() {
   const [selectedFacility, setSelectedFacility] = useState("");
@@ -24,6 +25,7 @@ function App() {
             element={<DashPage facility={selectedFacility} />}
           />
           <Route path="/strains" element={<StrainPage />} />
+          <Route path="/admin" element={<AdminPage />} />
         </Routes>
       </BrowserRouter>
     </div>

@@ -1,0 +1,21 @@
+.percentages-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 10px;
+  width: 100%;
+}
+
+.slider-container {
+  width: 100%;
+}
+
+.slider-container label {
+  display: block;
+  text-align: center;
+  margin-bottom: 5px;
+}
+
+.slider-container input {
+  width: 100%;
+}

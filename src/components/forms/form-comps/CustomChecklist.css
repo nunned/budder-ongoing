@@ -1,0 +1,19 @@
+/* CustomChecklist.css */
+.custom-checklist {
+    width: 100%;
+  }
+  
+  .checklist-header {
+    margin-bottom: 5px;
+  }
+  
+  .checklist-options {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  
+  .checklist-option {
+    margin-bottom: 5px;
+  }
+  

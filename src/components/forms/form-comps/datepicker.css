@@ -1,0 +1,75 @@
+/* datepicker.css */
+.date-picker {
+  position: relative;
+  width: 100%;
+}
+
+.date-title {
+  display: flex;
+  margin-bottom: 5px;
+}
+
+.date-header {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  font-size: 15px;
+  padding: 10px 20px;
+  border-radius: 8px;
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  background: #353547;
+  color: rgba(255, 255, 255, 0.5);
+  cursor: pointer;
+  width: auto;
+  margin-bottom: 5px;
+}
+
+.date-options {
+  position: absolute; /* Set position to absolute */
+  top: 100%; /* Position it right below the .date-header */
+  left: 5%; /* Align it to the left of the .date-picker */
+  z-index: 1000; /* Optional: Set a high z-index to ensure it overlays other elements */
+  justify-content: center;
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  border-radius: 5px;
+  background-color: #292937;
+  display: flex;
+  flex-direction: row;
+  gap: 5px;
+  padding: 10px;
+  width: fit-content;
+  margin: auto;
+}
+
+.date-options button {
+  background-color: #353547;
+  color: azure;
+  border: none;
+  padding: 10px 20px;
+  cursor: pointer;
+  border-radius: 0 8px 8px 0;
+}
+
+.date-options button:hover {
+  background-color: #444;
+}
+
+.date-options input[type="date"] {
+  padding: 10px;
+  background-color: #353547;
+  color: azure;
+  border-radius: 8px 0 0 8px;
+  border: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.down-arrow-icon {
+  object-fit: cover;
+  width: 16px;
+}
+
+.date-options input[type="date"]::-webkit-calendar-picker-indicator {
+  filter: invert(100%);
+  width: 16px;
+  height: 16px;
+}

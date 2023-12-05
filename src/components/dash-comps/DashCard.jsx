@@ -2,9 +2,9 @@
 import PropTypes from "prop-types";
 import "../../App.css";
 
-function DashCard({ label, value, descriptor, icon }) {
+function DashCard({ label, value, descriptor, icon, onClick }) {
   return (
-    <div className="dash-card">
+    <div className="dash-card" onClick={onClick}>
       <div className="dash-card-content">
         <div className="dash-card-text">
           <p className="dash-card-label">{label}</p>
@@ -24,6 +24,7 @@ DashCard.propTypes = {
   value: PropTypes.string.isRequired,
   descriptor: PropTypes.string.isRequired,
   icon: PropTypes.string.isRequired,
+  onClick: PropTypes.func,
 };
 
 export default DashCard;

@@ -4,11 +4,12 @@ import LiveImage from "../assets/LiveImage.svg";
 import arrowIcon from "../assets/sideArrow.svg";
 import DashCard from "../components/dash-comps/DashCard";
 import DashCarousel from "../components/Carousel/DashCarousel";
+import { useNavigate } from "react-router-dom";
 
 function DashPage({ facility }) {
   // Extract the facility number from the facility string
   const facilityNumber = facility.match(/Facility (\d+)/);
-
+  const navigate = useNavigate();
   const dashItems = [
     {
       action: "Changed Growth Phase",
@@ -18,17 +19,17 @@ function DashPage({ facility }) {
     {
       action: "Destroyed",
       user: "User2",
-      timeAgo: "3m ago",
+      timeAgo: "2m ago",
     },
     {
       action: "Created",
       user: "User3",
-      timeAgo: "5m ago",
+      timeAgo: "3m ago",
     },
     {
       action: "Moved",
       user: "User4",
-      timeAgo: "15m ago",
+      timeAgo: "4m ago",
     },
     // ... more items
   ].map((item, index) => (
@@ -43,22 +44,22 @@ function DashPage({ facility }) {
     {
       action: "Changed Growth Phase",
       user: "User1",
-      timeAgo: "1m ago",
+      timeAgo: "5m ago",
     },
     {
       action: "Destroyed",
       user: "User2",
-      timeAgo: "3m ago",
+      timeAgo: "6m ago",
     },
     {
       action: "Created",
       user: "User3",
-      timeAgo: "5m ago",
+      timeAgo: "7m ago",
     },
     {
       action: "Moved",
       user: "User4",
-      timeAgo: "15m ago",
+      timeAgo: "8m ago",
     },
   ].map((item, index) => (
     <div key={index} className="dash-item">
@@ -83,15 +84,26 @@ function DashPage({ facility }) {
         value="2,690"
         descriptor="TOTAL"
         icon={arrowIcon}
+        onClick={() => navigate("/dashplants")}
       />
+
       <DashCarousel headerTitle="Plants History" dashItems={dashItems} />
       <DashCard
         label="ACTIVE PACKAGES"
         value="25"
         descriptor="TOTAL"
         icon={arrowIcon}
+        onClick={() => navigate("/dashpackages")}
       />
       <DashCarousel headerTitle="Packages History" dashItems={packageItems} />
+      <DashCard
+        label="ACTIVE TRANSFERS"
+        value="25"
+        descriptor="TOTAL"
+        icon={arrowIcon}
+        onClick={() => navigate("/dashtransfers")}
+      />
+      <DashCarousel headerTitle="Transfer History" dashItems={packageItems} />
     </div>
   );
 }

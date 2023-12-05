@@ -13,6 +13,9 @@ import WastePage from "./pages/WastePage";
 import HarvestPage from "./pages/HarvestPage";
 import PackagesPage from "./pages/PackagesPage";
 import FormPage from "./pages/FormPage";
+import DashPlants from "./pages/dash-pages/dashPlants";
+import DashPackages from "./pages/dash-pages/DashPackages";
+import DashTransfers from "./pages/dash-pages/DashTransfers";
 
 function App() {
   const [selectedFacility, setSelectedFacility] = useState("");
@@ -40,7 +43,9 @@ function App() {
           <Route path="/harvest" element={<HarvestPage />} />
           <Route path="/admin" element={<AdminPage />} />
           <Route path="/packages" element={<PackagesPage />} />
-
+          <Route path="/dashplants" element={<DashPlants />} />
+          <Route path="/dashpackages" element={<DashPackages />} />
+          <Route path="/dashtransfers" element={<DashTransfers />} />
         </Routes>
       </BrowserRouter>
     </div>

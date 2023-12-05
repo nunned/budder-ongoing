@@ -12,8 +12,8 @@ import FlowerPage from "./pages/FlowerPage";
 import WastePage from "./pages/WastePage";
 import HarvestPage from "./pages/HarvestPage";
 import PackagesPage from "./pages/PackagesPage";
+import DashPlants from "./pages/dash-pages/DashPlants"
 import FormPage from "./pages/FormPage";
-import DashPlants from "./pages/dash-pages/dashPlants";
 import DashPackages from "./pages/dash-pages/DashPackages";
 import DashTransfers from "./pages/dash-pages/DashTransfers";
 

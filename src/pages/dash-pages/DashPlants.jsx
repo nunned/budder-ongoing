@@ -1,9 +1,6 @@
-
-
- function DashPlants() {
-  return (
-    <div>DashPlants</div>
-  )
-}
-
-export default DashPlants;
+function DashPlants() {
+    return <div>DashPlants</div>;
+  }
+  
+  export default DashPlants;
+  

@@ -1,0 +1,20 @@
+.dash-plants-wrap {
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  width: 25rem;
+}
+
+.dash-plants-header {
+  display: flex;
+  flex-direction: row;
+  justify-content: start;
+  align-items: baseline;
+  gap: 15px;
+}
+
+.dash-plants-card .dash-card-content {
+  /* Add custom styles for this specific instance */
+  width: auto;
+}

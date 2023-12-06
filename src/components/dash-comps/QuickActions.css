@@ -1,0 +1,44 @@
+.quick-actions-container {
+  display: flex;
+  justify-content: space-evenly;
+  width: 100%; /* Ensures it fits the width of the parent component */
+}
+
+.quick-actions-button {
+  background-color: #4c5b9e;
+  border: none;
+  border-radius: 10px;
+  color: white;
+  padding: 10px 20px;
+  margin: 5px;
+  cursor: pointer;
+  font-size: 16px;
+  flex: 1;
+}
+
+.quick-actions-modal {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: white;
+  padding: 20px;
+  z-index: 2;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.quick-actions-modal-content {
+  margin: 15px;
+  text-align: center;
+}
+
+.quick-actions-modal-close {
+  cursor: pointer;
+  color: #1f1f29;
+  padding: 8px 16px;
+}
+
+.quick-actions-modal-close:hover {
+  background-color: #f0f0f0;
+}

@@ -1,19 +1,31 @@
-.quick-actions-container {
-  display: flex;
-  justify-content: space-evenly;
-  width: 100%; /* Ensures it fits the width of the parent component */
-}
-
 .quick-actions-button {
   background-color: #4c5b9e;
   border: none;
-  border-radius: 10px;
+  border-radius: 5px; /* Make the border-radius smaller for a square look */
   color: white;
-  padding: 10px 20px;
+  padding: 10px; /* Set equal padding for top/bottom and left/right */
   margin: 5px;
   cursor: pointer;
   font-size: 16px;
   flex: 1;
+
+  /* Set width and height to be equal for a square button.
+     Use the 'min' property to ensure the button remains square on smaller screens. */
+  width: min(10vw, 100px); /* Adjust the size as needed */
+  height: min(10vw, 100px); /* Adjust the size as needed */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* Adjust the quick-actions-container to ensure buttons fit properly */
+.quick-actions-container {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center; /* This ensures vertical alignment if the buttons have different heights */
+  flex-wrap: wrap; /* Allows buttons to wrap on smaller screens */
+  gap: 10px; /* Provides space between buttons if they wrap */
+  width: 100%;
 }
 
 .quick-actions-modal {

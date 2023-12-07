@@ -19,7 +19,7 @@
 .see-all-button {
   background-color: transparent;
   border: none;
-  color: #0094FF; /* Adjust the color to match the SEE ALL button */
+  color: #0094ff; /* Adjust the color to match the SEE ALL button */
   font-weight: bold;
   cursor: pointer;
 }
@@ -72,6 +72,14 @@
   background-color: #555773; /* Hover effect for buttons */
 }
 
-/* Add custom icons or styles for the left and right arrows if needed */
+.room-item {
+  background-color: #2a333d; 
+  color: white; 
+  border-radius: 8px; 
+  padding: 20px; 
+  width: 100%; 
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); 
+  text-align: center; 
+}
 
 /* Additional responsive styling can be added to make the carousel mobile-friendly */
